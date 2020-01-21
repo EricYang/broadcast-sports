@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+<title>
+低調的轉播頻道，網址請勿散播，影片僅供學術研究討論
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+window.onload = function(){
+var url = new URL(window.location.href);
+var app_id = url.searchParams.get("app_id").replace('/watch/','')
+var node="<iframe width='384' height='216' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' allowfullscreen='yes' src='//sportsbay.org/embed/"+app_id+"'></iframe>"
+var d1 = document.getElementById('app');
+d1.insertAdjacentHTML('afterend', node);
+}
+</script>
+</head>
+<body>
+<div id="app">
+低調的轉播頻道，網址請勿散播，影片僅供學術研究討論                                                                                                                                                         
+</div>
+</body>
+</html>
+
